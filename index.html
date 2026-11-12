@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="scanlines"></div>
+
   <div class="wrap">
     <header class="top">
       <div class="logo">
@@ -23,8 +25,19 @@
 
     <div class="marquee"><span class="track" id="track"></span></div>
 
-    <div class="sec-title">游戏大厅</div>
-    <div class="grid" id="grid"></div>
+    <!-- 搜索 + 分类 -->
+    <div class="controls">
+      <div class="search">
+        <span class="s-icon">🔍</span>
+        <input id="search" type="text" placeholder="搜一台机器… 比如「射击」「塞尔达」">
+        <button class="s-clear" id="s-clear" title="清除">✕</button>
+      </div>
+      <div class="cats" id="cats"></div>
+    </div>
+
+    <div class="sec-title"><span id="sec-label">游戏大厅</span><span class="sec-note" id="sec-note"></span></div>
+    <div class="arcade" id="arcade"></div>
+    <div class="empty" id="empty" style="display:none">没有找到匹配的游戏，换个关键词试试 🕹️</div>
 
     <footer class="footer">
       <p><b>AI FUN</b> —— AI 做的轻量化大作集合。本站为个人小站，游戏均为 AI 复刻 / 网页轻量版，仅供学习交流与试玩。</p>
@@ -34,7 +47,7 @@
 
   <div class="lightbox" id="lightbox">
     <div class="lb-bar">
-      <button class="lb-back" id="lb-back" title="返回首页">← 返回首页</button>
+      <button class="lb-back" id="lb-back" title="返回大厅">← 返回大厅</button>
       <span class="t" id="lb-title"></span>
       <button class="x" id="lb-close" title="关闭">✕</button>
     </div>
