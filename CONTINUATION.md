@@ -64,3 +64,9 @@ git add -A && git commit -m "AI FUN 门户 v1" && git push -u origin main
 
 ## 下一段可粘贴开场白
 「继续 AI FUN 项目，先读 /Users/mi/workspace/aifun/CONTINUATION.md，当前卡在 GitHub 授权和服务器 SSH 确认。已搭好门户骨架并本地验证通过。」
+
+
+## 每日检索约定（用户每天早上10点来找）
+- 用户会每天来让帮忙检索「轻量化大型游戏 / 单文件可移植游戏」
+- 检索方法、验证标准、已踩坑见 `DAILY_GAMES.md`
+- 结论以 `DAILY_GAMES.md` 为准，先读它再动手
