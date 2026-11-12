@@ -44,6 +44,17 @@ window.AIFUN_GAMES = [
   { id:"track-not-found", name:"Track Not Found", tag:"竞速", desc:"2020获奖，极简竞速，本地托管秒开。", url:"games/track-not-found.html", local:true, enabled:true, status:"在线", emoji:"🏁", hue:"280", category:"竞速" },
   { id:"space13k", name:"Space", tag:"射击", desc:"2021获奖，太空射击，本地托管秒开。", url:"games/space.html", local:true, enabled:true, status:"在线", emoji:"🚀", hue:"260", category:"射击" },
   // —— AI 原生游戏（AI 写代码，打开即玩）——
+  // —— js13k 经典街机（本地托管）——
+  { id:"pacman", name:"吃豆人 Pacman", tag:"街机", desc:"经典吃豆人，单文件13KB本地秒开。", url:"games/pacman.html", local:true, enabled:true, status:"在线", emoji:"🟡", hue:"45", category:"街机" },
+  { id:"asteroids", name:"小行星 Asteroids", tag:"街机", desc:"经典太空射击，击碎小行星。", url:"games/asteroids.html", local:true, enabled:true, status:"在线", emoji:"🌑", hue:"220", category:"街机" },
+  { id:"glitch", name:"Glitch", tag:"动作", desc:"像素风横版动作，2016获奖。", url:"games/glitch.html", local:true, enabled:true, status:"在线", emoji:"👾", hue:"280", category:"动作" },
+  // —— js13k 经典小游戏（本地托管）——
+  { id:"space-invaders", name:"太空侵略者", tag:"街机", desc:"经典打外星人，单文件秒开。", url:"games/space-invaders.html", local:true, enabled:true, status:"在线", emoji:"👾", hue:"120", category:"街机" },
+  { id:"snake", name:"贪吃蛇", tag:"街机", desc:"经典贪吃蛇，越吃越长。", url:"games/snake.html", local:true, enabled:true, status:"在线", emoji:"🐍", hue:"90", category:"街机" },
+  { id:"tetris", name:"俄罗斯方块", tag:"街机", desc:"经典方块消消乐，停不下来。", url:"games/tetris.html", local:true, enabled:true, status:"在线", emoji:"🧱", hue:"200", category:"街机" },
+  { id:"pong", name:"乒乓 Pong", tag:"街机", desc:"史上第一款电子游戏。", url:"games/pong.html", local:true, enabled:true, status:"在线", emoji:"🏓", hue:"0", category:"街机" },
+  { id:"tower-defense", name:"塔防 Tower Defense", tag:"策略", desc:"经典塔防，守住防线。", url:"games/tower-defense.html", local:true, enabled:true, status:"在线", emoji:"🏰", hue:"150", category:"策略" },
+  { id:"survival", name:"生存 Survival", tag:"射击", desc:"生存射击，坚持越久越强。", url:"games/survival.html", local:true, enabled:true, status:"在线", emoji:"⚔️", hue:"30", category:"射击" },
   // —— 占位 ——
   { id:"coming-soon", name:"敬请期待", tag:"新机器", desc:"AI 正在开发下一款游戏…", url:"", local:false, enabled:true, status:"敬请期待", emoji:"👾", hue:"300", category:"其他" },
 ];
