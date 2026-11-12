@@ -21,6 +21,19 @@ window.AIFUN_GAMES = [
   { id:"pvz", name:"植物大战僵尸", tag:"塔防", desc:"国民级塔防，网页版原汁原味。", url:"https://gn-math.dev/?id=842", local:false, enabled:true, status:"维护中", emoji:"🌻", hue:"95", category:"塔防" },
   { id:"hollowknight", name:"空洞骑士", tag:"银河恶魔城", desc:"精致手绘的受苦探索神作。", url:"https://gn-math.dev/?id=468", local:false, enabled:true, status:"维护中", emoji:"🕷️", hue:"210", category:"冒险" },
   { id:"gettingoverit", name:"掘地求升", tag:"受苦攀爬", desc:"一个男人一把锤，血压拉满。", url:"https://gn-math.dev/?id=557", local:false, enabled:true, status:"维护中", emoji:"🔨", hue:"20", category:"休闲" },
+  // —— 经典格斗 / 恐怖经典 ——
+  { id:"sf-anniversary", name:"街头霸王·周年合集", tag:"格斗", desc:"经典街霸合集，网页版对战开打。", url:"https://streetfighteranniversary.online/", local:false, enabled:true, status:"在线", emoji:"🥊", hue:"0", category:"格斗" },
+  { id:"sf3", name:"街头霸王3·三度冲击", tag:"格斗", desc:"格斗游戏巅峰之作，网页版还原。", url:"https://streetfighter3.online/", local:false, enabled:true, status:"在线", emoji:"👊", hue:"356", category:"格斗" },
+  { id:"silenthill", name:"寂静岭·起源", tag:"恐怖", desc:"经典心理恐怖，网页版自动开始。", url:"https://silenthillorigins.zeliaopen.space/", local:false, enabled:true, status:"在线", emoji:"🌫️", hue:"220", category:"恐怖" },
+  // —— 更多经典移植大作 ——
+  { id:"tekken4", name:"铁拳4", tag:"格斗", desc:"3D格斗经典，网页版拳拳到肉。", url:"https://tekken4.online/", local:false, enabled:true, status:"在线", emoji:"🥋", hue:"4", category:"格斗" },
+  { id:"tekken5", name:"铁拳5", tag:"格斗", desc:"铁拳巅峰之作，网页版还原对战。", url:"https://tekken5.online/", local:false, enabled:true, status:"在线", emoji:"👊", hue:"15", category:"格斗" },
+  { id:"wwe2010", name:"WWE 2010", tag:"摔角", desc:"美式摔角，网页版擂台开打。", url:"https://wwe2010.online/", local:false, enabled:true, status:"在线", emoji:"🤼", hue:"45", category:"格斗" },
+  { id:"ufc2", name:"UFC 2", tag:"格斗", desc:"综合格斗，网页版拳拳对决。", url:"https://ufc2.online/", local:false, enabled:true, status:"在线", emoji:"🥊", hue:"25", category:"格斗" },
+  { id:"dragonball-bt3", name:"龙珠Z·武斗会3", tag:"格斗", desc:"龙珠格斗经典，网页版龟派气功。", url:"https://dragonballbudokai3.online/", local:false, enabled:true, status:"在线", emoji:"🐉", hue:"35", category:"格斗" },
+  { id:"spiderman2", name:"蜘蛛侠2", tag:"动作", desc:"飞檐走壁，网页版荡蛛丝。", url:"https://spiderman2.online/", local:false, enabled:true, status:"在线", emoji:"🕸️", hue:"0", category:"动作" },
+  { id:"residentevil4", name:"生化危机4", tag:"恐怖", desc:"经典生存恐怖，网页版重制。", url:"https://residentevil4.online/", local:false, enabled:true, status:"在线", emoji:"🧟", hue:"120", category:"恐怖" },
+  { id:"crash-kart", name:"古惑狼卡丁车", tag:"竞速", desc:"欢乐卡丁车竞速，网页版开跑。", url:"https://crashnitrokart.online/", local:false, enabled:true, status:"在线", emoji:"🦊", hue:"30", category:"竞速" },
   // —— 占位 ——
   { id:"coming-soon", name:"敬请期待", tag:"新机器", desc:"AI 正在开发下一款游戏…", url:"", local:false, enabled:true, status:"敬请期待", emoji:"👾", hue:"300", category:"其他" },
 ];
