@@ -44,14 +44,6 @@ window.AIFUN_GAMES = [
   { id:"track-not-found", name:"Track Not Found", tag:"竞速", desc:"2020获奖，极简竞速，本地托管秒开。", url:"games/track-not-found.html", local:true, enabled:true, status:"在线", emoji:"🏁", hue:"280", category:"竞速" },
   { id:"space13k", name:"Space", tag:"射击", desc:"2021获奖，太空射击，本地托管秒开。", url:"games/space.html", local:true, enabled:true, status:"在线", emoji:"🚀", hue:"260", category:"射击" },
   // —— AI 原生游戏（AI 写代码，打开即玩）——
-  { id:"cloud-climb", name:"云端攀爬", tag:"动作", desc:"AI生成的无限跳跃，从草原一路跳上太空。", url:"https://summoned.games/games/cloud-climb", local:false, enabled:true, status:"在线", emoji:"☁️", hue:"200", category:"动作" },
-  { id:"popgun-alley", name:"泡泡枪巷", tag:"射击", desc:"AI生成的漫画风射击，打碎箱子升级。", url:"https://summoned.games/games/popgun-alley", local:false, enabled:true, status:"在线", emoji:"🔫", hue:"15", category:"射击" },
-  { id:"skyline-stack", name:"天际堆叠", tag:"休闲", desc:"AI生成的盖楼游戏，手一抖楼就歪。", url:"https://summoned.games/games/skyline-stack", local:false, enabled:true, status:"在线", emoji:"🏙️", hue:"280", category:"休闲" },
-  { id:"breach-point", name:"突破点", tag:"射击", desc:"AI生成的3D团队射击，浏览器里开打。", url:"https://summoned.games/games/breach-point", local:false, enabled:true, status:"在线", emoji:"🎯", hue:"150", category:"射击" },
-  { id:"nitro-pitch", name:"氮气足球", tag:"体育", desc:"AI生成的火箭车足球，3分钟定胜负。", url:"https://summoned.games/games/nitro-pitch", local:false, enabled:true, status:"在线", emoji:"⚽", hue:"30", category:"体育" },
-  { id:"cubelands", name:"方块之地", tag:"沙盒", desc:"AI生成的体素小岛，挖矿建造点灯。", url:"https://summoned.games/games/cubelands", local:false, enabled:true, status:"在线", emoji:"🧊", hue:"210", category:"沙盒" },
-  { id:"bannerhold", name:"旗帜堡垒", tag:"策略", desc:"AI生成的中世纪城堡RTS，1v1攻城。", url:"https://summoned.games/games/bannerhold", local:false, enabled:true, status:"在线", emoji:"🏰", hue:"45", category:"策略" },
-  { id:"nova-conquest", name:"新星征服", tag:"策略", desc:"AI生成的星际策略，七位AI指挥官。", url:"https://summoned.games/games/nova-conquest", local:false, enabled:true, status:"在线", emoji:"🌌", hue:"260", category:"策略" },
   // —— 占位 ——
   { id:"coming-soon", name:"敬请期待", tag:"新机器", desc:"AI 正在开发下一款游戏…", url:"", local:false, enabled:true, status:"敬请期待", emoji:"👾", hue:"300", category:"其他" },
 ];

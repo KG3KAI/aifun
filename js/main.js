@@ -174,4 +174,23 @@
 
   renderCats();
   render();
+
+  // ===== 打赏弹窗 =====
+  var donateLink = document.getElementById("donate-link");
+  var donateModal = document.getElementById("donate-modal");
+  var donateClose = document.getElementById("donate-close");
+  function closeDonate(){
+    if(!donateModal) return;
+    donateModal.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+  if(donateLink && donateModal){
+    donateLink.addEventListener("click", function(){
+      donateModal.classList.add("open");
+      document.body.style.overflow = "hidden";
+    });
+    donateClose.addEventListener("click", closeDonate);
+    donateModal.addEventListener("click", function(e){ if(e.target===donateModal) closeDonate(); });
+    document.addEventListener("keydown", function(e){ if(e.key==="Escape") closeDonate(); });
+  }
 })();

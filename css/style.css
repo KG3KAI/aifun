@@ -189,3 +189,22 @@ a{color:inherit;text-decoration:none}
 .cab.dim:hover{opacity:1}
 .cab.dim .screen{filter:saturate(.7)}
 .cab.dim:hover .screen{filter:saturate(1)}
+
+/* ============ 打赏 ============ */
+.donate-link{background:rgba(22,119,255,.12);border:1px solid rgba(22,119,255,.4);color:#5c9dff;
+  padding:4px 12px;border-radius:8px;cursor:pointer;font-size:12px;transition:all .15s}
+.donate-link:hover{background:rgba(22,119,255,.22);box-shadow:0 0 12px rgba(22,119,255,.3)}
+
+.donate-modal{position:fixed;inset:0;background:rgba(4,6,12,.85);display:none;z-index:200;
+  align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+.donate-modal.open{display:flex}
+.donate-box{position:relative;background:linear-gradient(160deg,#141b2e,#0b1020);
+  border:1px solid rgba(22,119,255,.35);border-radius:16px;padding:30px 34px 26px;text-align:center;
+  box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 30px rgba(22,119,255,.15);max-width:320px;width:88%}
+.donate-close{position:absolute;top:12px;right:12px;width:30px;height:30px;border-radius:8px;
+  border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--ink-dim);cursor:pointer;font-size:14px}
+.donate-close:hover{background:rgba(255,80,80,.15);color:var(--ink)}
+.donate-title{font-size:18px;font-weight:800;color:var(--ink)}
+.donate-sub{margin-top:6px;font-size:12px;color:var(--ink-dim)}
+.donate-qr{width:200px;height:200px;margin:18px auto 10px;border-radius:12px;display:block;background:#fff}
+.donate-hint{font-size:12px;color:#5c9dff;letter-spacing:.05em}
