@@ -2,6 +2,12 @@
 
 > 目标：每天帮用户检索「轻量化大型游戏网页版 / 单文件可移植游戏」，验证后接入网站。
 
+## 重点检索方向（用户明确要求）
+**AI 原生（AI-native）游戏**：像「几猫港区」「黑神话悟空」这种 —— AI 生成/复刻的大型游戏轻量化网页版。
+- 特征：AI 制作的 3A 轻量化版、大 IP 复刻、自包含 HTML（几猫港区就是 1.4MB 单文件、零外部依赖）
+- 优先找：能下载成自包含单文件本地托管的；其次国内可达外链
+- 关键词：AI game、AI 复刻、黑神话 网页版、AI 生成游戏、web AI game
+
 ## 检索来源（按优先级）
 1. `Carter54git/Ultimate-Catalog-Of-Web-Game-Ports` —— 大型游戏网页移植目录（最全）
    - 读取 README：`gh api repos/Carter54git/Ultimate-Catalog-Of-Web-Game-Ports/readme --jq '.content' | base64 -d`
