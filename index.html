@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AI FUN · AI 做的游戏，一键开玩</title>
+<meta name="description" content="AI 做的轻量化大作，一个入口一键开玩。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="logo">
+        <div class="coin">AI</div>
+        <div>
+          <h1><b>AI</b> FUN</h1>
+          <div class="sub">AI 做的游戏 · 一键开玩</div>
+        </div>
+      </div>
+      <div class="count" id="count"></div>
+    </header>
+
+    <div class="marquee"><span class="track" id="track"></span></div>
+
+    <div class="sec-title">游戏大厅</div>
+    <div class="grid" id="grid"></div>
+
+    <footer class="footer">
+      <p><b>AI FUN</b> —— AI 做的轻量化大作集合。本站为个人小站，游戏均为 AI 复刻 / 网页轻量版，仅供学习交流与试玩。</p>
+      <p>外链游戏版权归原作者所有；本地「几猫港区」为 AI 生成内容。本站仅提供入口，不存储外部游戏文件。如有版权问题请联系下架。</p>
+    </footer>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lb-bar">
+      <span class="t" id="lb-title"></span>
+      <button class="x" id="lb-close" title="关闭">✕</button>
+    </div>
+    <iframe class="lb-frame" id="frame" allowfullscreen allow="autoplay; fullscreen; gamepad; xr-spatial-tracking"></iframe>
+  </div>
+
+  <script src="js/games.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
