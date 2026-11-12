@@ -10,7 +10,7 @@ window.AIFUN_GAMES = [
   { id:"qqfeiche", name:"QQ飞车 3D", tag:"竞速", desc:"AI 版飞车，氮气漂移一把梭。", url:"https://lf3-static.bytednsdoc.com/obj/eden-cn/nulojnulwlo/qqfeiche3d/index.html", local:false, enabled:true, status:"在线", emoji:"🏎️", hue:"200", category:"竞速", cover:"assets/covers/qqfeiche.svg" },
   { id:"cf-ship", name:"穿越火线·运输船", tag:"射击", desc:"经典运输船，AI 复刻突突突。", url:"https://lf3-static.bytednsdoc.com/obj/eden-cn/nulojnulwlo/cf-transport-ship/transport-ship.html", local:false, enabled:true, status:"在线", emoji:"🔫", hue:"0", category:"射击", cover:"assets/covers/cf-ship.svg" },
   { id:"pelican-bike", name:"鹈鹕骑自行车", tag:"休闲", desc:"一只鹈鹕的爆笑骑行挑战。", url:"https://lf3-static.bytednsdoc.com/obj/eden-cn/nulojnulwlo/pelican-bike/index.html", local:false, enabled:true, status:"在线", emoji:"🚲", hue:"152", category:"休闲", cover:"assets/covers/pelican-bike.svg" },
-  { id:"gta2", name:"GTA 2", tag:"动作", desc:"俯视角黑帮经典，网页版重温罪恶城。", url:"https://m1stermo.github.io/gta2/", local:false, enabled:true, status:"在线", emoji:"🚗", hue:"280", category:"动作" },
+  { id:"gta2", name:"GTA 2", tag:"动作", desc:"俯视角黑帮经典（依赖 archive.org，国内暂不可玩）。", url:"https://m1stermo.github.io/gta2/", local:false, enabled:true, status:"维护中", emoji:"🚗", hue:"280", category:"动作" },
   // —— 开源网页移植大作 ——
   { id:"amongus", name:"Among Us", tag:"社交推理", desc:"太空狼人杀，和朋友一起找出内鬼。", url:"https://wasm.rip/files/amongus/index.html", local:false, enabled:true, status:"在线", emoji:"🚀", hue:"38", category:"派对" },
   { id:"celeste", name:"Celeste 蔚蓝", tag:"平台跳跃", desc:"登山少女的极限跳跃，手感一流。", url:"https://celeste.r58playz.dev/", local:false, enabled:true, status:"在线", emoji:"🏔️", hue:"198", category:"动作" },
@@ -35,9 +35,9 @@ window.AIFUN_GAMES = [
   { id:"residentevil4", name:"生化危机4", tag:"恐怖", desc:"经典生存恐怖，网页版重制。", url:"https://residentevil4.online/", local:false, enabled:true, status:"在线", emoji:"🧟", hue:"120", category:"恐怖" },
   { id:"crash-kart", name:"古惑狼卡丁车", tag:"竞速", desc:"欢乐卡丁车竞速，网页版开跑。", url:"https://crashnitrokart.online/", local:false, enabled:true, status:"在线", emoji:"🦊", hue:"30", category:"竞速" },
   // —— GTA 系列 ——
-  { id:"gta3", name:"GTA 3", tag:"动作", desc:"3D开放世界开山作，网页版自由城。", url:"https://wasm.rip/files/gta3/index.html", local:false, enabled:true, status:"在线", emoji:"🌆", hue:"210", category:"动作" },
-  { id:"gta-chinatown", name:"GTA 唐人街战争", tag:"动作", desc:"掌机黑帮经典，网页版唐人街风云。", url:"https://gta-chinatown-wars.pages.dev/", local:false, enabled:true, status:"在线", emoji:"🏮", hue:"15", category:"动作" },
-  { id:"gta-vc", name:"GTA 罪恶都市", tag:"动作", desc:"80年代迈阿密，网页版罪恶都市。", url:"https://joncodeofficial.github.io/gta-vice-city-wasm/", local:false, enabled:true, status:"在线", emoji:"🌴", hue:"330", category:"动作" },
+  { id:"gta3", name:"GTA 3", tag:"动作", desc:"3D开放世界开山作，点开即玩自由城。", url:"https://wasm.rip/files/gta3/index.html", local:false, enabled:true, status:"在线", emoji:"🌆", hue:"210", category:"动作" },
+  { id:"gta-chinatown", name:"GTA 唐人街战争", tag:"动作", desc:"掌机黑帮经典（需上传游戏文件）。", url:"https://gta-chinatown-wars.pages.dev/", local:false, enabled:true, status:"维护中", emoji:"🏮", hue:"15", category:"动作" },
+  { id:"gta-vc", name:"GTA 罪恶都市", tag:"动作", desc:"80年代迈阿密（需上传游戏文件）。", url:"https://joncodeofficial.github.io/gta-vice-city-wasm/", local:false, enabled:true, status:"维护中", emoji:"🌴", hue:"330", category:"动作" },
   // —— 占位 ——
   { id:"coming-soon", name:"敬请期待", tag:"新机器", desc:"AI 正在开发下一款游戏…", url:"", local:false, enabled:true, status:"敬请期待", emoji:"👾", hue:"300", category:"其他" },
 ];
