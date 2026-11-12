@@ -16,7 +16,7 @@
   countEl.textContent = "已上机 " + online + " 款 · 持续更新";
 
   var names = G.filter(function(g){return g.enabled && g.url}).map(function(g){return g.name});
-  var msgs = ["AIPY · 点开就嗨", "本日推荐：几猫港区"];
+  var msgs = ["AIPY · 点开就嗨"];
   track.innerHTML = msgs.concat(names).join(" <i>◆</i> ") + " <i>◆</i> ";
 
   // 分类（按配置出现顺序去重）

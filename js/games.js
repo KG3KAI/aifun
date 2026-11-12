@@ -1,4 +1,4 @@
-// AI FUN 游戏清单 —— 配置化入口
+// AIPY 游戏清单 —— 配置化入口
 // 加游戏：复制一个对象；下架：enabled 改 false；维护：status 改 "维护中"
 // category 用于分类筛选；cover 留空则用 emoji 自动生成
 window.AIFUN_GAMES = [
