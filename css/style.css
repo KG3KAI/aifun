@@ -135,3 +135,48 @@ a{color:inherit;text-decoration:none}
   .lb-bar .t{font-size:12px}
   .lb-back{padding:0 10px;font-size:12px}
 }
+
+/* ============ 街机真实动效 ============ */
+/* 摇杆：杆 + 球头，hover 倾斜、按压回中 */
+.stick{position:relative;transition:transform .12s ease}
+.stick::after{content:"";display:block;width:10px;height:10px;border-radius:50%;background:#0a0f1d;
+  margin:12px auto 0;box-shadow:inset 0 1px 2px #000;transition:transform .22s cubic-bezier(.34,1.56,.64,1)}
+.cab:hover .stick{transform:translateY(1px)}
+.cab:hover .stick::after{transform:translate(-4px,-4px) rotate(-32deg)}
+.cab:active .stick{transform:translateY(3px)}
+.cab:active .stick::after{transform:translate(5px,3px) rotate(28deg) scale(.9)}
+
+/* 按钮：悬停发光、按压下沉 + 亮起 */
+.btn{position:relative;transition:transform .08s ease, box-shadow .15s ease, filter .15s ease}
+.cab:hover .btn.red{filter:brightness(1.4);box-shadow:0 0 16px rgba(255,82,82,.75), inset 0 -3px 5px rgba(0,0,0,.5)}
+.cab:hover .btn.blue{filter:brightness(1.4);box-shadow:0 0 16px rgba(82,140,255,.75), inset 0 -3px 5px rgba(0,0,0,.5)}
+.cab:active .btn{transform:translateY(3px) scale(.88);filter:brightness(1.7)}
+.cab:active .btn.red{box-shadow:0 0 22px rgba(255,60,60,.9), inset 0 -2px 3px rgba(0,0,0,.6)}
+.cab:active .btn.blue{box-shadow:0 0 22px rgba(60,120,255,.9), inset 0 -2px 3px rgba(0,0,0,.6)}
+
+/* 屏幕：悬停增亮 + 开机扫描线加速 */
+.screen{transition:filter .2s ease}
+.cab:hover .screen{filter:brightness(1.12) saturate(1.08)}
+
+/* 投币开机过场：整机短暂震动 + 灯箱爆闪 */
+.cab.starting .cabinet{animation:coinShake .32s ease}
+.cab.starting .marquee-top{animation:flashTop .32s ease}
+.cab.starting .screen{animation:screenBoot .32s ease}
+@keyframes coinShake{
+  0%,100%{transform:translate(0,0)}
+  20%{transform:translate(-3px,1px)}
+  40%{transform:translate(3px,-1px)}
+  60%{transform:translate(-2px,0)}
+  80%{transform:translate(2px,1px)}
+}
+@keyframes flashTop{
+  0%,100%{filter:brightness(1)}
+  30%{filter:brightness(2.4) saturate(1.3)}
+  60%{filter:brightness(1.6)}
+}
+@keyframes screenBoot{
+  0%{filter:brightness(1)}
+  35%{filter:brightness(2.6) contrast(1.2)}
+  70%{filter:brightness(1.4)}
+  100%{filter:brightness(1.12)}
+}

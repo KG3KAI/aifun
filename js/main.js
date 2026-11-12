@@ -68,10 +68,10 @@
       '</div>';
 
     if(g.url && !isOff){
-      el.addEventListener("click", function(){ openLightbox(g); });
+      el.addEventListener("click", function(){ startCabinet(el, g); });
       el.setAttribute("role","button");
       el.setAttribute("tabindex","0");
-      el.addEventListener("keydown", function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); openLightbox(g); } });
+      el.addEventListener("keydown", function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); startCabinet(el, g); } });
     }
     return el;
   }
@@ -129,3 +129,44 @@
   renderCats();
   render();
 })();
+
+  // ===== 投币开机过场 + 音效 =====
+  var audioCtx = null;
+  function ensureAudio(){
+    if(!audioCtx){
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if(AC) audioCtx = new AC();
+    }
+    if(audioCtx && audioCtx.state === "suspended") audioCtx.resume();
+    return audioCtx;
+  }
+  // 合成街机投币音：一声高频"叮" + 短促"哒"
+  function playCoinSound(){
+    var ctx = ensureAudio();
+    if(!ctx) return;
+    var t0 = ctx.currentTime;
+    function tone(freq, start, dur, vol, type){
+      var o = ctx.createOscillator();
+      var g = ctx.createGain();
+      o.type = type || "square";
+      o.frequency.value = freq;
+      g.gain.setValueAtTime(0.0001, t0+start);
+      g.gain.exponentialRampToValueAtTime(vol, t0+start+0.012);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0+start+dur);
+      o.connect(g); g.connect(ctx.destination);
+      o.start(t0+start); o.stop(t0+start+dur+0.02);
+    }
+    tone(1568, 0.00, 0.09, 0.18, "square");   // G6 叮
+    tone(2093, 0.07, 0.12, 0.16, "square");   // C7 叮
+    tone(660,  0.14, 0.06, 0.10, "triangle");  // 落地哒
+  }
+
+  // 点击机柜时先触发投币开机，再打开灯箱
+  function startCabinet(el, g){
+    el.classList.add("starting");
+    playCoinSound();
+    setTimeout(function(){
+      el.classList.remove("starting");
+      openLightbox(g);
+    }, 340);
+  }
