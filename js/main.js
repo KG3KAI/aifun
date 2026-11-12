@@ -97,16 +97,18 @@
 
   function makeCabinet(g){
     var isOff = g.status!=="在线";
+    var noUrl = !g.url;
     var el = document.createElement("div");
-    el.className = "cab" + (isOff ? " disabled" : "");
+    el.className = "cab" + (noUrl ? " disabled" : "") + (isOff && !noUrl ? " dim" : "");
     el.style.setProperty("--h", g.hue || "200");
     el.setAttribute("data-name", g.name.toLowerCase());
     el.setAttribute("data-cat", g.category || "");
     el.setAttribute("data-status", g.status);
     el.setAttribute("data-search", (g.name+" "+g.tag+" "+g.desc).toLowerCase());
 
+    var badgeCls = g.status==="敬请期待" ? "coming" : (g.status==="需代理" ? "proxy" : (g.status==="维护中" ? "off" : ""));
     var badge = isOff
-      ? '<span class="cab-badge '+(g.status==="敬请期待"?"coming":"off")+'">'+g.status+'</span>'
+      ? '<span class="cab-badge '+badgeCls+'">'+g.status+'</span>'
       : '<span class="cab-badge">● 在线</span>';
 
     var screen = g.cover
@@ -128,7 +130,8 @@
         badge +
       '</div>';
 
-    if(g.url && !isOff){
+    // 有URL的都能点开（含需代理/维护中，让用户看到游戏页面或报错提示）；仅无URL的占位不可点
+    if(g.url){
       el.addEventListener("click", function(){ startCabinet(el, g); });
       el.setAttribute("role","button");
       el.setAttribute("tabindex","0");

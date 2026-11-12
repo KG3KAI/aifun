@@ -180,3 +180,12 @@ a{color:inherit;text-decoration:none}
   70%{filter:brightness(1.4)}
   100%{filter:brightness(1.12)}
 }
+
+/* 需代理状态角标 */
+.cab-badge.proxy{color:#ffa94d;border-color:rgba(255,169,77,.5);background:rgba(80,40,0,.5)}
+
+/* 非在线但可点的卡片（需代理/维护中）：轻度暗化，仍可交互 */
+.cab.dim{cursor:pointer;opacity:.75}
+.cab.dim:hover{opacity:1}
+.cab.dim .screen{filter:saturate(.7)}
+.cab.dim:hover .screen{filter:saturate(1)}
