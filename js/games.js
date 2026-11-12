@@ -34,6 +34,11 @@ window.AIFUN_GAMES = [
   { id:"spiderman2", name:"蜘蛛侠2", tag:"动作", desc:"飞檐走壁，网页版荡蛛丝。", url:"https://spiderman2.online/", local:false, enabled:true, status:"在线", emoji:"🕸️", hue:"0", category:"动作" },
   { id:"residentevil4", name:"生化危机4", tag:"恐怖", desc:"经典生存恐怖，网页版重制。", url:"https://residentevil4.online/", local:false, enabled:true, status:"在线", emoji:"🧟", hue:"120", category:"恐怖" },
   { id:"crash-kart", name:"古惑狼卡丁车", tag:"竞速", desc:"欢乐卡丁车竞速，网页版开跑。", url:"https://crashnitrokart.online/", local:false, enabled:true, status:"在线", emoji:"🦊", hue:"30", category:"竞速" },
+  // —— GTA 系列 ——
+  { id:"gta2", name:"GTA 2", tag:"动作", desc:"俯视角黑帮经典，网页版重温罪恶城。", url:"https://m1stermo.github.io/gta2/", local:false, enabled:true, status:"在线", emoji:"🚗", hue:"280", category:"动作" },
+  { id:"gta3", name:"GTA 3", tag:"动作", desc:"3D开放世界开山作，网页版自由城。", url:"https://wasm.rip/files/gta3/index.html", local:false, enabled:true, status:"在线", emoji:"🌆", hue:"210", category:"动作" },
+  { id:"gta-chinatown", name:"GTA 唐人街战争", tag:"动作", desc:"掌机黑帮经典，网页版唐人街风云。", url:"https://gta-chinatown-wars.pages.dev/", local:false, enabled:true, status:"在线", emoji:"🏮", hue:"15", category:"动作" },
+  { id:"gta-vc", name:"GTA 罪恶都市", tag:"动作", desc:"80年代迈阿密，网页版罪恶都市。", url:"https://joncodeofficial.github.io/gta-vice-city-wasm/", local:false, enabled:true, status:"在线", emoji:"🌴", hue:"330", category:"动作" },
   // —— 占位 ——
   { id:"coming-soon", name:"敬请期待", tag:"新机器", desc:"AI 正在开发下一款游戏…", url:"", local:false, enabled:true, status:"敬请期待", emoji:"👾", hue:"300", category:"其他" },
 ];
