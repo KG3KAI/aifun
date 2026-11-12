@@ -37,12 +37,12 @@ window.AIFUN_GAMES = [
   // —— GTA 系列 ——
   { id:"gta3", name:"GTA 3", tag:"动作", desc:"3D开放世界开山作。核心代码在境外，需挂代理才能玩。", url:"https://wasm.rip/files/gta3/index.html", local:false, enabled:true, status:"需代理", emoji:"🌆", hue:"210", category:"动作" },
   // —— js13k 单文件获奖游戏（国内可玩）——
-  { id:"highway404", name:"Highway 404", tag:"竞速", desc:"2020冠军，404高速飙车，单文件13KB。", url:"https://play.js13kgames.com/highway-404/", local:false, enabled:true, status:"在线", emoji:"🛣️", hue:"210", category:"竞速" },
-  { id:"submersible2063", name:"潜水战舰2063", tag:"射击", desc:"2018冠军，潜艇大战，单文件13KB。", url:"https://play.js13kgames.com/submersible-warship-2063/", local:false, enabled:true, status:"在线", emoji:"🚢", hue:"200", category:"射击" },
-  { id:"underrun", name:"Underrun", tag:"射击", desc:"2018获奖，暗黑射击生存，单文件13KB。", url:"https://play.js13kgames.com/underrun/", local:false, enabled:true, status:"在线", emoji:"🔦", hue:"140", category:"射击" },
-  { id:"push-back", name:"Push Back", tag:"解谜", desc:"2019获奖，推箱子逻辑解谜。", url:"https://play.js13kgames.com/push-back/", local:false, enabled:true, status:"在线", emoji:"📦", hue:"30", category:"解谜" },
-  { id:"track-not-found", name:"Track Not Found", tag:"竞速", desc:"2020获奖，极简竞速，单文件13KB。", url:"https://play.js13kgames.com/track-not-found/", local:false, enabled:true, status:"在线", emoji:"🏁", hue:"280", category:"竞速" },
-  { id:"space13k", name:"Space", tag:"射击", desc:"2021获奖，太空射击，单文件13KB。", url:"https://play.js13kgames.com/space/", local:false, enabled:true, status:"在线", emoji:"🚀", hue:"260", category:"射击" },
+  { id:"highway404", name:"Highway 404", tag:"竞速", desc:"2020冠军，404高速飙车，本地托管秒开。", url:"games/highway-404.html", local:true, enabled:true, status:"在线", emoji:"🛣️", hue:"210", category:"竞速" },
+  { id:"submersible2063", name:"潜水战舰2063", tag:"射击", desc:"2018冠军，潜艇大战，本地托管秒开。", url:"games/submersible-warship-2063.html", local:true, enabled:true, status:"在线", emoji:"🚢", hue:"200", category:"射击" },
+  { id:"underrun", name:"Underrun", tag:"射击", desc:"2018获奖，暗黑射击生存，本地托管秒开。", url:"games/underrun.html", local:true, enabled:true, status:"在线", emoji:"🔦", hue:"140", category:"射击" },
+  { id:"push-back", name:"Push Back", tag:"解谜", desc:"2019获奖，推箱子逻辑解谜，本地托管。", url:"games/push-back.html", local:true, enabled:true, status:"在线", emoji:"📦", hue:"30", category:"解谜" },
+  { id:"track-not-found", name:"Track Not Found", tag:"竞速", desc:"2020获奖，极简竞速，本地托管秒开。", url:"games/track-not-found.html", local:true, enabled:true, status:"在线", emoji:"🏁", hue:"280", category:"竞速" },
+  { id:"space13k", name:"Space", tag:"射击", desc:"2021获奖，太空射击，本地托管秒开。", url:"games/space.html", local:true, enabled:true, status:"在线", emoji:"🚀", hue:"260", category:"射击" },
   // —— 占位 ——
   { id:"coming-soon", name:"敬请期待", tag:"新机器", desc:"AI 正在开发下一款游戏…", url:"", local:false, enabled:true, status:"敬请期待", emoji:"👾", hue:"300", category:"其他" },
 ];

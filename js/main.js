@@ -80,7 +80,12 @@
     playCoinSound();
     setTimeout(function(){
       el.classList.remove("starting");
-      openLightbox(g);
+      if(g.local){
+        // 本地游戏：新标签页打开（全屏体验更好）
+        window.open(g.url, "_blank");
+      } else {
+        openLightbox(g);
+      }
     }, 340);
   }
 
