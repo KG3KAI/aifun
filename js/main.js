@@ -23,6 +23,67 @@
   var cats = ["全部"];
   G.forEach(function(g){ if(g.enabled && g.category && cats.indexOf(g.category)<0) cats.push(g.category); });
 
+  // ===== 灯箱（先定义，供 startCabinet 调用）=====
+  var lb = document.getElementById("lightbox");
+  var frame = document.getElementById("frame");
+  var lbTitle = document.getElementById("lb-title");
+  var lbClose = document.getElementById("lb-close");
+  var lbBack = document.getElementById("lb-back");
+
+  function openLightbox(g){
+    lbTitle.textContent = g.name + " · " + g.tag;
+    frame.src = g.url;
+    lb.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeLightbox(){
+    lb.classList.remove("open");
+    frame.src = "about:blank";
+    document.body.style.overflow = "";
+  }
+  lbClose.addEventListener("click", closeLightbox);
+  lbBack.addEventListener("click", closeLightbox);
+  lb.addEventListener("click", function(e){ if(e.target===lb) closeLightbox(); });
+  document.addEventListener("keydown", function(e){ if(e.key==="Escape") closeLightbox(); });
+
+  // ===== 投币开机过场 + 音效 =====
+  var audioCtx = null;
+  function ensureAudio(){
+    if(!audioCtx){
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if(AC) audioCtx = new AC();
+    }
+    if(audioCtx && audioCtx.state === "suspended") audioCtx.resume();
+    return audioCtx;
+  }
+  function playCoinSound(){
+    var ctx = ensureAudio();
+    if(!ctx) return;
+    var t0 = ctx.currentTime;
+    function tone(freq, start, dur, vol, type){
+      var o = ctx.createOscillator();
+      var g = ctx.createGain();
+      o.type = type || "square";
+      o.frequency.value = freq;
+      g.gain.setValueAtTime(0.0001, t0+start);
+      g.gain.exponentialRampToValueAtTime(vol, t0+start+0.012);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0+start+dur);
+      o.connect(g); g.connect(ctx.destination);
+      o.start(t0+start); o.stop(t0+start+dur+0.02);
+    }
+    tone(1568, 0.00, 0.09, 0.18, "square");
+    tone(2093, 0.07, 0.12, 0.16, "square");
+    tone(660,  0.14, 0.06, 0.10, "triangle");
+  }
+  function startCabinet(el, g){
+    el.classList.add("starting");
+    playCoinSound();
+    setTimeout(function(){
+      el.classList.remove("starting");
+      openLightbox(g);
+    }, 340);
+  }
+
   function renderCats(){
     catsEl.innerHTML = "";
     cats.forEach(function(c){
@@ -103,70 +164,6 @@
     searchEl.value = ""; state.q = ""; sClear.style.display="none"; render(); searchEl.focus();
   });
 
-  // 灯箱
-  var lb = document.getElementById("lightbox");
-  var frame = document.getElementById("frame");
-  var lbTitle = document.getElementById("lb-title");
-  var lbClose = document.getElementById("lb-close");
-  var lbBack = document.getElementById("lb-back");
-
-  function openLightbox(g){
-    lbTitle.textContent = g.name + " · " + g.tag;
-    frame.src = g.url;
-    lb.classList.add("open");
-    document.body.style.overflow = "hidden";
-  }
-  function closeLightbox(){
-    lb.classList.remove("open");
-    frame.src = "about:blank";
-    document.body.style.overflow = "";
-  }
-  lbClose.addEventListener("click", closeLightbox);
-  lbBack.addEventListener("click", closeLightbox);
-  lb.addEventListener("click", function(e){ if(e.target===lb) closeLightbox(); });
-  document.addEventListener("keydown", function(e){ if(e.key==="Escape") closeLightbox(); });
-
   renderCats();
   render();
 })();
-
-  // ===== 投币开机过场 + 音效 =====
-  var audioCtx = null;
-  function ensureAudio(){
-    if(!audioCtx){
-      var AC = window.AudioContext || window.webkitAudioContext;
-      if(AC) audioCtx = new AC();
-    }
-    if(audioCtx && audioCtx.state === "suspended") audioCtx.resume();
-    return audioCtx;
-  }
-  // 合成街机投币音：一声高频"叮" + 短促"哒"
-  function playCoinSound(){
-    var ctx = ensureAudio();
-    if(!ctx) return;
-    var t0 = ctx.currentTime;
-    function tone(freq, start, dur, vol, type){
-      var o = ctx.createOscillator();
-      var g = ctx.createGain();
-      o.type = type || "square";
-      o.frequency.value = freq;
-      g.gain.setValueAtTime(0.0001, t0+start);
-      g.gain.exponentialRampToValueAtTime(vol, t0+start+0.012);
-      g.gain.exponentialRampToValueAtTime(0.0001, t0+start+dur);
-      o.connect(g); g.connect(ctx.destination);
-      o.start(t0+start); o.stop(t0+start+dur+0.02);
-    }
-    tone(1568, 0.00, 0.09, 0.18, "square");   // G6 叮
-    tone(2093, 0.07, 0.12, 0.16, "square");   // C7 叮
-    tone(660,  0.14, 0.06, 0.10, "triangle");  // 落地哒
-  }
-
-  // 点击机柜时先触发投币开机，再打开灯箱
-  function startCabinet(el, g){
-    el.classList.add("starting");
-    playCoinSound();
-    setTimeout(function(){
-      el.classList.remove("starting");
-      openLightbox(g);
-    }, 340);
-  }
