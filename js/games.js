@@ -18,9 +18,9 @@ window.AIFUN_GAMES = [
   { id:"doom", name:"毁灭战士 DOOM", tag:"FPS", desc:"FPS 开山之作，网页版丝滑运行。", url:"https://raz0red.github.io/webprboom/", local:false, enabled:true, status:"在线", emoji:"👾", hue:"12", category:"射击" },
   { id:"portal", name:"传送门 Portal", tag:"解谜 FPS", desc:"用传送枪解开空间谜题。", url:"https://yikes.pw/portal/", local:false, enabled:true, status:"在线", emoji:"🌀", hue:"262", category:"解谜" },
   { id:"geometrydash", name:"几何冲刺", tag:"音游跑酷", desc:"节奏感拉满的魔鬼跑酷。", url:"https://web-dashers.github.io/", local:false, enabled:true, status:"在线", emoji:"🔺", hue:"140", category:"休闲" },
-  { id:"pvz", name:"植物大战僵尸", tag:"塔防", desc:"国民级塔防，网页版原汁原味。", url:"https://gn-math.dev/?id=842", local:false, enabled:true, status:"在线", emoji:"🌻", hue:"95", category:"塔防" },
-  { id:"hollowknight", name:"空洞骑士", tag:"银河恶魔城", desc:"精致手绘的受苦探索神作。", url:"https://gn-math.dev/?id=468", local:false, enabled:true, status:"在线", emoji:"🕷️", hue:"210", category:"冒险" },
-  { id:"gettingoverit", name:"掘地求升", tag:"受苦攀爬", desc:"一个男人一把锤，血压拉满。", url:"https://gn-math.dev/?id=557", local:false, enabled:true, status:"在线", emoji:"🔨", hue:"20", category:"休闲" },
+  { id:"pvz", name:"植物大战僵尸", tag:"塔防", desc:"国民级塔防，网页版原汁原味。", url:"https://gn-math.dev/?id=842", local:false, enabled:true, status:"维护中", emoji:"🌻", hue:"95", category:"塔防" },
+  { id:"hollowknight", name:"空洞骑士", tag:"银河恶魔城", desc:"精致手绘的受苦探索神作。", url:"https://gn-math.dev/?id=468", local:false, enabled:true, status:"维护中", emoji:"🕷️", hue:"210", category:"冒险" },
+  { id:"gettingoverit", name:"掘地求升", tag:"受苦攀爬", desc:"一个男人一把锤，血压拉满。", url:"https://gn-math.dev/?id=557", local:false, enabled:true, status:"维护中", emoji:"🔨", hue:"20", category:"休闲" },
   // —— 占位 ——
   { id:"coming-soon", name:"敬请期待", tag:"新机器", desc:"AI 正在开发下一款游戏…", url:"", local:false, enabled:true, status:"敬请期待", emoji:"👾", hue:"300", category:"其他" },
 ];
