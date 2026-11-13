@@ -55,6 +55,8 @@ window.AIFUN_GAMES = [
   { id:"pong", name:"乒乓 Pong", tag:"街机", desc:"史上第一款电子游戏。", url:"games/pong.html", local:true, enabled:true, status:"在线", emoji:"🏓", hue:"0", category:"街机" },
   { id:"tower-defense", name:"塔防 Tower Defense", tag:"策略", desc:"经典塔防，守住防线。", url:"games/tower-defense.html", local:true, enabled:true, status:"在线", emoji:"🏰", hue:"150", category:"策略" },
   { id:"survival", name:"生存 Survival", tag:"射击", desc:"生存射击，坚持越久越强。", url:"games/survival.html", local:true, enabled:true, status:"在线", emoji:"⚔️", hue:"30", category:"射击" },
+  // —— AIPY 自研游戏 ——
+  { id:"neon-survivor", name:"霓虹幸存者", tag:"生存射击", desc:"AIPY自研，霓虹生存射击，升级三选一撑到底。", url:"games/neon-survivor.html", local:true, enabled:true, status:"在线", emoji:"🌌", hue:"190", category:"自研" },
   // —— 占位 ——
   { id:"coming-soon", name:"敬请期待", tag:"新机器", desc:"AI 正在开发下一款游戏…", url:"", local:false, enabled:true, status:"敬请期待", emoji:"👾", hue:"300", category:"其他" },
 ];
