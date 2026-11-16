@@ -73,6 +73,16 @@ window.AIFUN_GAMES = [
   { id:"cloud-stunt", name:"云端特技3D", tag:"竞速", desc:"Fable 5.2制作，3D云端特技飞行。", url:"https://finderchangchang.github.io/cloud-stunt-3d/", local:false, enabled:true, status:"在线", emoji:"✈️", hue:"220", category:"竞速" },
   { id:"fps-repro", name:"FPS复刻", tag:"FPS", desc:"Fable 5.2制作，第一人称射击复刻。", url:"https://wquguru.github.io/fable52-fps-repro/", local:false, enabled:true, status:"在线", emoji:"🔫", hue:"0", category:"射击" },
   { id:"solstice-racing", name:"至日赛车", tag:"竞速", desc:"Fable 5.2制作，至日极光赛车。", url:"https://samg-coder.github.io/solstice-racing/", local:false, enabled:true, status:"在线", emoji:"🌌", hue:"160", category:"竞速" },
+  // —— Fable 5.2 3D世界/场景 ——
+  { id:"solstice-garden", name:"至日花园", tag:"3D场景", desc:"Fable 5.2制作，可探索的梦幻花园。", url:"https://samg-coder.github.io/solstice-garden/", local:false, enabled:true, status:"在线", emoji:"🌺", hue:"300", category:"3D世界" },
+  { id:"pine-hollow", name:"松谷滑雪场", tag:"3D场景", desc:"Fable 5.2制作，活生生的滑雪小镇。", url:"https://loktar00.github.io/pine-hollow/", local:false, enabled:true, status:"在线", emoji:"⛷️", hue:"200", category:"3D世界" },
+  { id:"red-wing-jet", name:"红翼私人飞机", tag:"3D场景", desc:"Fable 5.2制作，豪华私人飞机体验。", url:"https://madebysourasith-sudo.github.io/red-wing-jet/", local:false, enabled:true, status:"在线", emoji:"🛩️", hue:"0", category:"3D世界" },
+  { id:"painted-valley", name:"彩绘山谷", tag:"3D场景", desc:"Fable 5.2制作，油画风格山谷。", url:"https://patch.gg/blendi/painted-valley", local:false, enabled:true, status:"在线", emoji:"🏞️", hue:"120", category:"3D世界" },
+  { id:"impossible-spaces", name:"不可能空间", tag:"3D场景", desc:"Fable 5.2制作，悖论几何空间。", url:"https://patch.gg/blendi/impossible-spaces", local:false, enabled:true, status:"在线", emoji:"🌀", hue:"280", category:"3D世界" },
+  { id:"code-planet", name:"代码星球", tag:"3D场景", desc:"Fable 5.2制作，代码生成的外星世界。", url:"https://planet.tokyoaivisuals.club/", local:false, enabled:true, status:"在线", emoji:"🪐", hue:"230", category:"3D世界" },
+  { id:"pirate-ship", name:"海盗船", tag:"3D场景", desc:"Fable 5.2制作，可探索的海盗船。", url:"https://tests.jazii.dev/", local:false, enabled:true, status:"在线", emoji:"🏴‍☠️", hue:"30", category:"3D世界" },
+  { id:"matrix-vibe", name:"矩阵氛围", tag:"3D场景", desc:"Fable 5.2制作，赛博矩阵世界。", url:"https://feelthematrix.com", local:false, enabled:true, status:"在线", emoji:"💚", hue:"140", category:"3D世界" },
+  { id:"bay-through-time", name:"湾区穿越", tag:"3D场景", desc:"Fable 5.2制作，湾区时空穿越。", url:"https://bay.theojaffee.net", local:false, enabled:true, status:"在线", emoji:"🌉", hue:"210", category:"3D世界" },
   // —— 占位 ——
   { id:"coming-soon", name:"敬请期待", tag:"新机器", desc:"AI 正在开发下一款游戏…", url:"", local:false, enabled:true, status:"敬请期待", emoji:"👾", hue:"300", category:"其他" },
 ];
