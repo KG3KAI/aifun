@@ -9,6 +9,19 @@
 - 关键词：AI game、AI 复刻、黑神话 网页版、AI 生成游戏、web AI game
 
 ## 检索来源（按优先级）
+
+### ⭐ 首选：awesome-fable-5.2（每日更新，Claude Fable 5.2 生成游戏）
+- 仓库：`fengyiqicoder/awesome-fable-5.2`（309星，166个可玩作品，每天更新）
+- 这是「AI 原生」游戏的最佳来源，版权干净、可公开
+- 完整列表在 `all/` 目录：
+  - `all/games.md` —— 83 个游戏
+  - `all/3d-worlds.md` —— 38 个 3D 世界/场景
+  - `all/web-and-tools.md` —— 35 个网页工具
+  - `all/animation.md` —— 12 个动画
+- 抓取命令：`gh api repos/fengyiqicoder/awesome-fable-5.2/contents/all/games.md --jq '.content' | base64 -d`
+- 链接格式：`<b><a href="URL">NAME</a></b>`，用正则 `re.findall(r'<b><a href="([^"]+)">([^<]+)</a></b>', s)` 提取
+
+### 其他来源
 1. `Carter54git/Ultimate-Catalog-Of-Web-Game-Ports` —— 大型游戏网页移植目录（最全）
    - 读取 README：`gh api repos/Carter54git/Ultimate-Catalog-Of-Web-Game-Ports/readme --jq '.content' | base64 -d`
 2. js13k 官网 —— 单文件 HTML 游戏（自包含、国内能玩、最适合本地托管）
@@ -20,7 +33,13 @@
 - ✅ 真正可玩 = 资源国内可达（不依赖 archive.org / raw.githack.com / workers.dev / vercel 等境外 CDN）
 - ✅ 最稳的做法：像几猫港区那样，**下载成自包含单文件 HTML 本地托管**（`games/` 目录）
 
-## 已踩过的坑
+## 已踩过的坑（含 Fable 检索教训）
+- ⚠️ **批量 while 循环 curl 会全返回 000**（脚本环境问题），必须**逐个 curl 单独测**，或用 `for` 循环但每次独立跑
+- Fable 列表里 `claude.ai/artifact/*` 需登录，直接排除
+- Fable 列表里 `vercel.app`/`netlify.app`/`surge.sh`/`pages.dev`/`itch.io` 国内不稳，跳过
+- 已确认可嵌入的稳定域名：`github.io`、`remix.gg`、`patch.gg`、`aigameshare.com`、`fowllabs.com` 等
+
+### 更早的坑
 - GTA2 依赖 archive.org（国内连不上）→ 标"需代理"
 - GTA3 依赖 raw.githack.com（国内连不上）→ 标"需代理"
 - 几何冲刺依赖 workers.dev → 不稳
@@ -48,8 +67,10 @@ cd /Users/mi/workspace/aifun && python3 -m http.server 8765
 git add -A && git commit -m "xxx" && git push origin main
 ```
 
-## 当前进度（2026-11-12）
-- 共 35 款，29 款在线
-- 本地托管 7 款：几猫港区 + 6款js13k
-- 外链在线 22 款，需代理 2 款（GTA2/GTA3），维护/占位 4 款
-- 域名 aipy.space 已绑定（HTTP 可用，HTTPS 证书待签）
+## 当前进度（2026-11-16）
+- 共 69 款，63 款在线，17 款本地托管
+- 本地托管：几猫港区 + 霓虹幸存者(自研) + 15款js13k
+- Fable 5.2 已加入：15 游戏 + 9 3D世界 = 24 款
+- 打赏入口已隐藏（页脚按钮注释掉）
+- 域名 aipy.space + HTTPS 已生效（证书到 2027-02-10）
+- 品牌：AIPY，slogan「点开就嗨」
