@@ -57,6 +57,22 @@ window.AIFUN_GAMES = [
   { id:"survival", name:"生存 Survival", tag:"射击", desc:"生存射击，坚持越久越强。", url:"games/survival.html", local:true, enabled:true, status:"在线", emoji:"⚔️", hue:"30", category:"射击" },
   // —— AIPY 自研游戏 ——
   { id:"neon-survivor", name:"霓虹幸存者", tag:"生存射击", desc:"AIPY自研，霓虹生存射击，升级三选一撑到底。", url:"games/neon-survivor.html", local:true, enabled:true, status:"在线", emoji:"🌌", hue:"190", category:"自研" },
+  // —— Fable 5.2 生成游戏（Claude 制作，版权干净）——
+  { id:"oil-paint", name:"油画游戏 Oil Paint", tag:"手绘", desc:"Fable 5.2制作，每帧150万笔触的手绘世界。", url:"https://patch.gg/blendi/oil-paint", local:false, enabled:true, status:"在线", emoji:"🎨", hue:"280", category:"艺术" },
+  { id:"tennis", name:"网球 Tennis", tag:"体育", desc:"Fable 5.2制作，看似Pong实则暗藏玄机。", url:"https://tennis.sixfingerpunch.com/", local:false, enabled:true, status:"在线", emoji:"🎾", hue:"140", category:"体育" },
+  { id:"aussie-4x4", name:"澳洲越野 4x4", tag:"越野", desc:"Fable 5.2制作，澳洲内陆越野驰骋。", url:"https://rust4x4.com/", local:false, enabled:true, status:"在线", emoji:"🚙", hue:"25", category:"竞速" },
+  { id:"starfall-moba", name:"星陨 MOBA", tag:"MOBA", desc:"Fable 5.2制作，浏览器里的MOBA对战。", url:"https://sanwan.ai/games/xingyun-moba/", local:false, enabled:true, status:"在线", emoji:"⚔️", hue:"210", category:"对战" },
+  { id:"banana-rush", name:"香蕉矿工", tag:"动作", desc:"Fable 5.2制作，挖矿狂奔。", url:"https://remix.gg/g/banana-mine-rush", local:false, enabled:true, status:"在线", emoji:"🍌", hue:"50", category:"动作" },
+  { id:"survivors-gg", name:"幸存者 Survivors", tag:"生存", desc:"Fable 5.2制作，类幸存者生存射击。", url:"https://remix.gg/g/survivors", local:false, enabled:true, status:"在线", emoji:"🧟", hue:"120", category:"生存" },
+  { id:"hoppy-meadow", name:"跳跳草地", tag:"休闲", desc:"Fable 5.2制作，草地蹦跳解压。", url:"https://remix.gg/g/hoppy-meadow", local:false, enabled:true, status:"在线", emoji:"🐰", hue:"90", category:"休闲" },
+  { id:"brix84", name:"BRIX 84", tag:"动作", desc:"Fable 5.2制作，复古像素动作。", url:"https://remix.gg/g/brix-84", local:false, enabled:true, status:"在线", emoji:"🧱", hue:"200", category:"动作" },
+  { id:"animal-card", name:"动物卡牌战", tag:"卡牌", desc:"Fable 5.2制作，动物卡牌对战。", url:"https://www.aigameshare.com/games/animal-card-battle-game?play=1&mode=fullscreen", local:false, enabled:true, status:"在线", emoji:"🐾", hue:"35", category:"卡牌" },
+  { id:"nightclub-drift", name:"夜店漂移", tag:"竞速", desc:"Fable 5.2制作，夜店风漂移竞速。", url:"https://www.nightclub-driftspeed.xyz/", local:false, enabled:true, status:"在线", emoji:"🏎️", hue:"300", category:"竞速" },
+  { id:"lanternfall", name:"灯笼坠落 LANTERNFALL", tag:"动作", desc:"Fable 5.2制作，光影动作冒险。", url:"https://loktar00.github.io/lanternfall/", local:false, enabled:true, status:"在线", emoji:"🏮", hue:"20", category:"动作" },
+  { id:"mist-gate", name:"雾锁山门", tag:"3D动作", desc:"Fable 5.2制作，中式3D动作游戏。", url:"https://op7418.github.io/guizang-game-skill/", local:false, enabled:true, status:"在线", emoji:"⛰️", hue:"190", category:"动作" },
+  { id:"cloud-stunt", name:"云端特技3D", tag:"竞速", desc:"Fable 5.2制作，3D云端特技飞行。", url:"https://finderchangchang.github.io/cloud-stunt-3d/", local:false, enabled:true, status:"在线", emoji:"✈️", hue:"220", category:"竞速" },
+  { id:"fps-repro", name:"FPS复刻", tag:"FPS", desc:"Fable 5.2制作，第一人称射击复刻。", url:"https://wquguru.github.io/fable52-fps-repro/", local:false, enabled:true, status:"在线", emoji:"🔫", hue:"0", category:"射击" },
+  { id:"solstice-racing", name:"至日赛车", tag:"竞速", desc:"Fable 5.2制作，至日极光赛车。", url:"https://samg-coder.github.io/solstice-racing/", local:false, enabled:true, status:"在线", emoji:"🌌", hue:"160", category:"竞速" },
   // —— 占位 ——
   { id:"coming-soon", name:"敬请期待", tag:"新机器", desc:"AI 正在开发下一款游戏…", url:"", local:false, enabled:true, status:"敬请期待", emoji:"👾", hue:"300", category:"其他" },
 ];
